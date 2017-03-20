@@ -1,0 +1,17 @@
+ {{#if games}}
+    <ul class="games">
+    {{#each games}}
+        {{#if isIndex}}
+        {{else}}
+            <li>
+            {{#if active}}
+                <strong>{{title}}</strong>
+                {{else}}
+                <a href="/{{path}}">{{title}}</a>
+            {{/if}}
+            </li>
+        {{/if}}
+    {{/each}}
+
+    </ul>
+{{/if}}

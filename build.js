@@ -5,6 +5,7 @@ var permalinks  = require('metalsmith-permalinks');
 var browserSync = require('metalsmith-browser-sync');
 var pkg = require('./package.json');
 var assets = require('metalsmith-assets');
+var collections = require('metalsmith-collections');
 
 var dir = {
     base: __dirname + '/',
@@ -22,7 +23,7 @@ templateConfig = {
 
 Metalsmith(__dirname)
   .metadata({
-    title: "Agile Reaction",
+    siteTitle: "Agile Reaction",
     description: "Games/Software Development",
     generator: "Metalsmith",
     url: "http://www.agilereaction.com/",
@@ -33,6 +34,44 @@ Metalsmith(__dirname)
   .source(dir.source + "html/")
   .destination(dir.dest)
   .clean(true)
+  .use(collections({ // determine page collection/taxonomy
+    page: {
+      pattern: '**/index.*',
+      sortBy: 'priority',
+      reverse: true,
+      refer: false
+    },
+    games: {
+      pattern: 'games/**/*',
+      sortBy: 'priority',
+      reverse: true,
+      refer: true,
+      limit: 50,
+      metadata: {
+        layout: 'page.html'
+      }
+    },
+    projects: {
+      pattern: 'games/**/*',
+      sortBy: 'priority',
+      reverse: true,
+      refer: true,
+      limit: 50,
+      metadata: {
+        layout: 'page.html'
+      }
+    },
+    assets: {
+      pattern: 'games/**/*',
+      sortBy: 'priority',
+      reverse: true,
+      refer: true,
+      limit: 50,
+      metadata: {
+        layout: 'page.html'
+      }
+    }
+  }))
   .use(markdown())
   .use(permalinks())
   .use(layouts(templateConfig))
