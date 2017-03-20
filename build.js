@@ -48,11 +48,11 @@ Metalsmith(__dirname)
       refer: true,
       limit: 50,
       metadata: {
-        layout: 'page.html'
+        layout: 'gamepage.html'
       }
     },
     projects: {
-      pattern: 'games/**/*',
+      pattern: 'projects/**/*',
       sortBy: 'priority',
       reverse: true,
       refer: true,
@@ -62,7 +62,7 @@ Metalsmith(__dirname)
       }
     },
     assets: {
-      pattern: 'games/**/*',
+      pattern: 'assets/**/*',
       sortBy: 'priority',
       reverse: true,
       refer: true,
