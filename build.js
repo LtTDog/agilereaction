@@ -86,14 +86,14 @@ Metalsmith(__dirname)
   .use(markdown())
   .use(permalinks())
   .use(layouts(templateConfig))
+  .use(assets({
+    source: dir.source + 'assets/', // relative to the working directory 
+    destination: './' // relative to the build directory 
+  }))
   .use(linkcheck())
   .use(browserSync({
     server : "docs",
     files  : [dir.source + "**/*"]
-  }))
-  .use(assets({
-    source: dir.source + 'assets/', // relative to the working directory 
-    destination: './' // relative to the build directory 
   }))
   .build(function(err, files) {
     if (err) { throw err; }
