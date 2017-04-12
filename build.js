@@ -11,7 +11,7 @@ var dir = {
     base: __dirname + '/',
     lib: __dirname + '/lib/',
     source: './src/',
-    dest: './www/'
+    dest: './docs/'
   };
 
 templateConfig = {
@@ -86,7 +86,7 @@ Metalsmith(__dirname)
   .use(permalinks())
   .use(layouts(templateConfig))
   .use(browserSync({
-    server : "www",
+    server : "docs",
     files  : [dir.source + "**/*"]
   }))
   .use(assets({
