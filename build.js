@@ -6,6 +6,7 @@ var browserSync = require('metalsmith-browser-sync');
 var pkg = require('./package.json');
 var assets = require('metalsmith-assets');
 var collections = require('metalsmith-collections');
+var linkcheck = require('metalsmith-linkcheck');
 
 var dir = {
     base: __dirname + '/',
@@ -85,6 +86,7 @@ Metalsmith(__dirname)
   .use(markdown())
   .use(permalinks())
   .use(layouts(templateConfig))
+  .use(linkcheck())
   .use(browserSync({
     server : "docs",
     files  : [dir.source + "**/*"]
