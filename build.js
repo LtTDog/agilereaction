@@ -70,6 +70,16 @@ Metalsmith(__dirname)
       metadata: {
         layout: 'page.html'
       }
+    },
+    pages: {
+      pattern: 'pages/**/*',
+      sortBy: 'priority',
+      reverse: true,
+      refer: true,
+      limit: 50,
+      metadata: {
+        layout: 'page.html'
+      }
     }
   }))
   .use(markdown())

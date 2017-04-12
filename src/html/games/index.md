@@ -4,4 +4,4 @@ isIndex: true
 layout: gamelist.html
 ---
 
-List of Games
+# Games
