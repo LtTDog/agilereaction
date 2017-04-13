@@ -10,6 +10,7 @@ var linkcheck = require('metalsmith-linkcheck');
 var imagemin = require('metalsmith-imagemin');
 var htmlMinifier = require("metalsmith-html-minifier");
 var compress = require('metalsmith-gzip');
+var static = require('metalsmith-static');
 
 var dir = {
     base: __dirname + '/',
@@ -17,6 +18,11 @@ var dir = {
     source: './src/',
     dest: './docs/'
   };
+
+  var staticConfig = {
+    src: "public",
+    dest: "."
+  }
 
 templateConfig = {
     engine: 'handlebars',
@@ -38,6 +44,7 @@ Metalsmith(__dirname)
   .source(dir.source + "html/")
   .destination(dir.dest)
   .clean(true)
+  .use(static(staticConfig))
   .use(collections({ // determine page collection/taxonomy
     page: {
       pattern: '**/index.*',

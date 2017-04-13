@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "metalsmith-gzip": "^1.1.0",
-    "metalsmith-html-minifier": "^2.2.0"
+    "metalsmith-html-minifier": "^2.2.0",
+    "metalsmith-static": "0.0.5"
   }
 }
