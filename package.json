@@ -26,7 +26,9 @@
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-assets": "^0.1.0",
-    "metalsmith-collections": "^0.9.0"
+    "metalsmith-collections": "^0.9.0",
+    "metalsmith-imagemin": "^4.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+  }
 }

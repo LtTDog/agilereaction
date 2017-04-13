@@ -7,6 +7,7 @@ var pkg = require('./package.json');
 var assets = require('metalsmith-assets');
 var collections = require('metalsmith-collections');
 var linkcheck = require('metalsmith-linkcheck');
+var imagemin = require('metalsmith-imagemin');
 
 var dir = {
     base: __dirname + '/',
@@ -89,6 +90,10 @@ Metalsmith(__dirname)
   .use(assets({
     source: dir.source + 'assets/', // relative to the working directory 
     destination: './' // relative to the build directory 
+  }))
+  .use(imagemin({
+    optimizationLevel: 3,
+    svgoPlugins: [{ removeViewBox: false }]
   }))
   .use(linkcheck())
   .use(browserSync({
