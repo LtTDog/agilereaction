@@ -30,6 +30,7 @@
     "metalsmith-imagemin": "^4.0.0"
   },
   "dependencies": {
+    "metalsmith-gzip": "^1.1.0",
     "metalsmith-html-minifier": "^2.2.0"
   }
 }

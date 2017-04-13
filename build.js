@@ -9,6 +9,7 @@ var collections = require('metalsmith-collections');
 var linkcheck = require('metalsmith-linkcheck');
 var imagemin = require('metalsmith-imagemin');
 var htmlMinifier = require("metalsmith-html-minifier");
+var compress = require('metalsmith-gzip');
 
 var dir = {
     base: __dirname + '/',
@@ -97,6 +98,7 @@ Metalsmith(__dirname)
     svgoPlugins: [{ removeViewBox: false }]
   }))
   .use(htmlMinifier())
+  .use(compress())
   .use(linkcheck())
   .use(browserSync({
     server : "docs",
