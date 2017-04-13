@@ -8,6 +8,7 @@ var assets = require('metalsmith-assets');
 var collections = require('metalsmith-collections');
 var linkcheck = require('metalsmith-linkcheck');
 var imagemin = require('metalsmith-imagemin');
+var htmlMinifier = require("metalsmith-html-minifier");
 
 var dir = {
     base: __dirname + '/',
@@ -95,6 +96,7 @@ Metalsmith(__dirname)
     optimizationLevel: 3,
     svgoPlugins: [{ removeViewBox: false }]
   }))
+  .use(htmlMinifier())
   .use(linkcheck())
   .use(browserSync({
     server : "docs",
