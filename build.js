@@ -107,10 +107,10 @@ Metalsmith(__dirname)
   .use(htmlMinifier())
   .use(compress())
   .use(linkcheck())
-  .use(browserSync({
-    server: "www",
-    files: [dir.source + "**/*"]
-  }))
+  // .use(browserSync({
+  //   server: "www",
+  //   files: [dir.source + "**/*"]
+  // }))
   .build(function (err, files) {
     if (err) { throw err; }
   });
