@@ -14,6 +14,9 @@
     "/imgs/indiedevdog/profile.png",
     "/css/style.css",
     "/js/script.js",
+    "/imgs/animalbricks/feature.png",
+    "/imgs/animalbricks/android800x12802.png",
+    "/imgs/googleplayicon_60.png",
     "/imgs/spaceship/ufo.blend_.png",
     "/imgs/spaceship/ufo.blend1_.png",
     "/imgs/low-poly-tree/screenshot3.png",
@@ -21,8 +24,5 @@
     "/imgs/low-poly-tree/screenshot5.png",
     "/imgs/low-poly-tree/screenshot6.png",
     "/imgs/low-poly-tree/screenshot7.png",
-    "/imgs/animalbricks/feature.png",
-    "/imgs/animalbricks/android800x12802.png",
-    "/imgs/googleplayicon_60.png",
     "/pages/list-of-unity-resources"
 ]
