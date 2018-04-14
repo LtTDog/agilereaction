@@ -1,7 +1,7 @@
-var Metalsmith  = require('metalsmith');
-var markdown    = require('metalsmith-markdown');
-var layouts     = require('metalsmith-layouts');
-var permalinks  = require('metalsmith-permalinks');
+var Metalsmith = require('metalsmith');
+var markdown = require('metalsmith-markdown');
+var layouts = require('metalsmith-layouts');
+var permalinks = require('metalsmith-permalinks');
 var browserSync = require('metalsmith-browser-sync');
 var pkg = require('./package.json');
 var assets = require('metalsmith-assets');
@@ -13,23 +13,23 @@ var compress = require('metalsmith-gzip');
 var static = require('metalsmith-static');
 
 var dir = {
-    base: __dirname + '/',
-    lib: __dirname + '/lib/',
-    source: './src/',
-    dest: './docs/'
-  };
+  base: __dirname + '/',
+  lib: __dirname + '/lib/',
+  source: './src/',
+  dest: './www/'
+};
 
-  var staticConfig = {
-    src: "public",
-    dest: "."
-  }
+var staticConfig = {
+  src: "public",
+  dest: "."
+}
 
 templateConfig = {
-    engine: 'handlebars',
-    directory: dir.source + 'template/',
-    partials: dir.source + 'partials/',
-    default: 'page.html'
-  };
+  engine: 'handlebars',
+  directory: dir.source + 'template/',
+  partials: dir.source + 'partials/',
+  default: 'page.html'
+};
 
 Metalsmith(__dirname)
   .metadata({
@@ -108,9 +108,9 @@ Metalsmith(__dirname)
   .use(compress())
   .use(linkcheck())
   .use(browserSync({
-    server : "docs",
-    files  : [dir.source + "**/*"]
+    server: "www",
+    files: [dir.source + "**/*"]
   }))
-  .build(function(err, files) {
+  .build(function (err, files) {
     if (err) { throw err; }
   });

@@ -1,7 +1,4 @@
 ---
-title: Games
 isIndex: true
-layout: gamelist.html
+layout: indexpage.html
 ---
-
-# Games

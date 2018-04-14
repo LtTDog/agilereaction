@@ -4,7 +4,7 @@ layout: page.html
 ---
 
 
-
+**Some of these links are Affiliate links**
 
 Free Tutorial Creators
 <ul>
@@ -51,7 +51,6 @@ GameDev Blogs
  	<li><a href="http://devblog.aliasinggames.com/" target="_blank" rel="nofollow">Aliasing Games</a></li>
  	<li><a href="http://snddev.tumblr.com/" target="_blank" rel="nofollow">Daniel Snd Devlog</a></li>
  	<li><a href="https://danielthenerdyguy.co.uk/" target="_blank" rel="nofollow">danielthenerdyguy's Game Dev Blog</a></li>
- 	<li><a href="https://gamedevdaily.io/" target="_blank" rel="nofollow">Game Dev Daily</a></li>
  	<li><a href="http://blog.kjinteractive.net/" rel="nofollow">KJ Interactive</a></li>
  	<li><a href="http://paradoxforge.com/dev-blog/" target="_blank" rel="nofollow">Paradox Forge</a></li>
  	<li><a href="http://www.robotmonkeybrain.com/" target="_blank" rel="nofollow">Robot Monkey Brain</a></li>
