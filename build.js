@@ -106,7 +106,7 @@ Metalsmith(__dirname)
   }))
   .use(htmlMinifier())
   .use(compress())
-  .use(linkcheck())
+  // .use(linkcheck())
   // .use(browserSync({
   //   server: "www",
   //   files: [dir.source + "**/*"]
