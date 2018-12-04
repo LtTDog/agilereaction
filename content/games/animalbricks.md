@@ -1,9 +1,10 @@
 ---
 title: Animal Bricks
-priority: 1
 images: ["animalbricks/feature.png", "animalbricks/Android800x12802.png"]
 icon: "animalbricks/icon.png"
+featured_image: "/imgs/games/animalbricks/feature.png"
 play-store: https://play.google.com/store/apps/details?id=com.agilereaction.animalbricks
+date: 2018-12-04T11:45:03-05:00
 layout: 'gamepage.html'
 ---
 

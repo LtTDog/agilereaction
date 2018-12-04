@@ -1,9 +1,9 @@
 ---
 title: Free 3D Flying Saucer model
-priority: 1
 images: ["spaceship/Screenshot.png","spaceship/ufo.blend_.png","spaceship/ufo.blend1_.png"]
 icon: "spaceship/Screenshot.png"
-layout: 'gamepage.html'
+featured_image: "/imgs/assets/spaceship/Screenshot.png"
+date: 2018-12-04T11:45:03-05:00
 ---
 
 The Flying Saucer uses 3 materials one for the top center piece, bottom center piece and rest of the body. This is so you can place emissions on the bottom piece and top to give it that extra effect.

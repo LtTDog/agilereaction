@@ -1,3 +1,7 @@
+---
+title: "Privacy Policy"
+---
+
 ### Who we are
 
 Agile Reaction is committed to maintaining the trust and confidence of our visitors to our website. We are not in the business of selling your email or personal information.
@@ -32,4 +36,4 @@ Mobile Apps use a varity of third party services. We don't collect any personal 
 
 ### Changes to this Privacy Policy
 
-Any changes will be made here and may be done at any time. Last Updated: 5/21/2018
+Any changes will be made here and may be done at any time. Last Updated: 12/04/2018
