@@ -1,5 +1,6 @@
 ---
 title: "Privacy Policy"
+menu: ["main", "footer"]
 ---
 
 ### Who we are
