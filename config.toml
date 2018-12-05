@@ -16,4 +16,5 @@ SectionPagesMenu = "main"
   linkedin = ""
   background_color_class = ""
   featured_image = ""
-  recent_posts_number = 2
+  recent_posts_number = 3
+#   mainSections = ["posts"]
