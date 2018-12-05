@@ -17,4 +17,4 @@ SectionPagesMenu = "main"
   background_color_class = ""
   featured_image = ""
   recent_posts_number = 3
-#   mainSections = ["posts"]
+  mainSections = ["posts"]
