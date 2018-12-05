@@ -1,8 +1,6 @@
 ---
 title: Low Poly Style Tree Pack
-images: ["low-poly-tree/screenshot1.png", "low-poly-tree/screenshot3.png", "low-poly-tree/screenshot4.png", "low-poly-tree/screenshot5.png","low-poly-tree/screenshot6.png", "low-poly-tree/screenshot7.png"]
-featured_image: "/imgs/assets/low-poly-tree/screenshot1.png"
-icon: "low-poly-tree/screenshot1.png"
+featured_image: "/assets/low-poly-style-tree-pack/screenshot1.png"
 date: 2018-12-04T11:45:03-05:00
 ---
 

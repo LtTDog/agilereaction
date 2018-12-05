@@ -1,8 +1,6 @@
 ---
 title: Free 3D Flying Saucer model
-images: ["spaceship/Screenshot.png","spaceship/ufo.blend_.png","spaceship/ufo.blend1_.png"]
-icon: "spaceship/Screenshot.png"
-featured_image: "/imgs/assets/spaceship/Screenshot.png"
+featured_image: "/assets/3d-flying-saucer-model/Screenshot.png"
 date: 2018-12-04T11:45:03-05:00
 ---
 

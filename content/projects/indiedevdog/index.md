@@ -1,7 +1,7 @@
 ---
 title: IndieDevDog
 icon: "indiedevdog/profile.png"
-featured_image: "/imgs/projects/indiedevdog/profile.png"
+featured_image: "projects/indiedevdog/profile.png"
 ---
 
 [@IndieDevDog](https://twitter.com/indiedevdog) is an experimental bot I wrote in originally written in python. I recently rewritten it in node and created a web interface in meteor.  It now uses spam filter and the web interface is for training the bot to detect spam.  The full source code of the bot is over at GitHub.  Its kind of hack together quickly, I wrote it in node and meteor to get a better understanding of the language plus there was some cool frameworks.
