@@ -3,3 +3,17 @@ languageCode = "en-us"
 title = "Agile Reaction"
 theme = "ananke"
 SectionPagesMenu = "main"
+
+[params]
+  favicon = ""
+  description = ""
+  facebook = ""
+  twitter = "https://twitter.com/tdogvoid"
+  instagram = ""
+  youtube = ""
+  github = ""
+  gitlab = "https://gitlab.com/TDog"
+  linkedin = ""
+  background_color_class = ""
+  featured_image = ""
+  recent_posts_number = 2
